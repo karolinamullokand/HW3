@@ -18,9 +18,12 @@ library(tidyverse)
 distincted_data <- distinct(Household_Pulse_data, TBIRTH_YEAR, EEDUC, EST_ST, RECVDVACC)
 ```
 **Still valid version, but needs improvement**
+
+```
 p <- ggplot(data = distincted_data,
             mapping = aes(x = TBIRTH_YEAR,
-                          y = count(n))) 
+                          y = count(n)))
+```
 
 # Final version
 
