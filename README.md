@@ -25,14 +25,13 @@ p <- ggplot(data = distincted_data,
 # Final version
 
 ```
-s <- ggplot(distincted_data, aes(x = TBIRTH_YEAR, y = n, color = EST_ST)) +
-  geom_point() +
-  labs(title = "Vaccination Status by Birth Year and Location",
-       x = "Birth Year",
-       y = "Count of Vaccinated Individuals",
-       color = "Location") +
-  theme_minimal()
-
+s <- ggplot(distincted_data, aes(x = TBIRTH_YEAR, fill = "RECVDVACC")) +
+   geom_bar() +
+   labs(title = "Vaccination Status by Birth Year",
+        x = "Birth Year",
+        y = "Vaccinated Count") +
+   theme_minimal()
+ 
 ggplotly(s)
 ```
 
