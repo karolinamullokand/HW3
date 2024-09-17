@@ -25,7 +25,7 @@ p <- ggplot(data = distincted_data,
                           y = count(n)))
 ```
 
-# Final version
+**Final version**
 
 ```
 s <- ggplot(distincted_data, aes(x = TBIRTH_YEAR, fill = "RECVDVACC")) +
