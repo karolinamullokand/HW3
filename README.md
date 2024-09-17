@@ -38,15 +38,7 @@ s <- ggplot(distincted_data, aes(x = TBIRTH_YEAR, fill = "RECVDVACC")) +
 ggplotly(s)
 ```
 
-# Summary
-During the process of creating a visual representation of these variables, at first I thought that I would be able to place 
-
-
-
-
-
-
-#2
+# 2
 
 **Creating usual R environment**
 
@@ -75,7 +67,7 @@ distincted_data$education_level <- fct_recode(distincted_data$EEDUC,
                                               "adv deg" = "adv deg")
 ```
 
-
+**Result**
 ```
 p <- ggplot(data = distincted_data,
             mapping = aes(x = EEDUC,
@@ -90,3 +82,12 @@ s <- ggplot(distincted_data, aes(x = EEDUC, fill = RECVDVACC)) +
 
 ggplotly(s)
 ```
+# Summary
+During the process of creating a visual representation of these variables, at first I thought that I would be able to place 
+
+
+
+
+
+
+
