@@ -140,7 +140,7 @@ ggplotly (s)
 
 # Summary
 During the process of creating a visual representation of these variables, I was struggling with finding it grouped correctly, ofthen had a syntax errors.
-Creating a third one was a challenge! I'm still not sure if I counted all of the states, and for sure not all of them grouped correctly into political identity. I used some data on different websites, just to make a approximate political identity data
+Creating a third one was a challenge! I'm still not sure if I counted all of the states, and for sure not all of them grouped correctly into political identity. I used some data from different websites, just to have a approximate political identity data
 
 
 
