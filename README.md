@@ -1,3 +1,5 @@
+**Study group:** Karolina Mullokand & Jermaine
+
 # 1
 **Creating usual R environment**
 
@@ -97,7 +99,7 @@ load("Household_Pulse_data_ph4c2.RData")
 
 distincted_data <- distinct(Household_Pulse_data, TBIRTH_YEAR, EEDUC, EST_ST, RECVDVACC)
 ```
-**Creating dataframe for future use in creating one dataframe**
+**Creating dataframe for future use in creating one more dataframe**
 
 ```
 vaccination_summary <- distincted_data %>%
@@ -137,7 +139,7 @@ ggplotly (s)
 
 
 # Summary
-During the process of creating a visual representation of these variables, at first I thought that I would be able to place 
+During the process of creating a visual representation of these variables, I was struggling with finding it grouped correctly, ofthen had a syntax errors.
 Creating a third one was a challenge! I'm still not sure if I counted all of the states, and for sure not all of them grouped correctly into political identity. I used some data on different websites, just to make a approximate political identity data
 
 
