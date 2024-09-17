@@ -47,20 +47,41 @@ During the process of creating a visual representation of these variables, at fi
 
 
 #2
+
+**Creating usual R environment**
+
+```
 library(plotly)
 library(dplyr)
 library(ggplot2)
 library(tidyverse)
 setwd("/Users/karolinamullokand/Desktop/ECO_B2000")
 load("Household_Pulse_data_ph4c2.RData")
+```
 
+```
 distincted_data <- distinct(Household_Pulse_data, TBIRTH_YEAR, EEDUC, EST_ST, RECVDVACC)
 
+levels(distincted_data$EEDUC)
+```
+
+**Recoding Education Levels**
+```
+distincted_data$education_level <- fct_recode(distincted_data$EEDUC,
+                                              "HS diploma" = "HS diploma",
+                                              "some coll" = "some coll",
+                                              "assoc deg" = "assoc deg",
+                                              "bach deg" = "bach deg",
+                                              "adv deg" = "adv deg")
+```
+
+
+```
 p <- ggplot(data = distincted_data,
             mapping = aes(x = EEDUC,
                           y = count(n)))
 
-s <- ggplot(distincted_data, aes(x = "EEDUC", fill = "RECVDVACC")) +
+s <- ggplot(distincted_data, aes(x = EEDUC, fill = RECVDVACC)) +
   geom_bar() +
   labs(title = "Vaccination Status by Education level",
        x = "Education Level",
@@ -68,3 +89,4 @@ s <- ggplot(distincted_data, aes(x = "EEDUC", fill = "RECVDVACC")) +
   theme_minimal()
 
 ggplotly(s)
+```
